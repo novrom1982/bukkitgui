@@ -48,8 +48,8 @@ Namespace MCInterop
             Me.args = flags
             Me.jar = jar
             Me.switches = switches
-            Me.custom_arg = "-Dfile.encoding=COMPAT"
-            Me.custom_switch = "nogui Dfile.encoding=COMPAT"
+            Me.custom_arg = ""
+            Me.custom_switch = ""
         End Sub
 
         
@@ -80,7 +80,7 @@ Namespace MCInterop
                     Me.switches = "-nojline"
                     Me.args += " -Duser.language=en "
                     If readAsBool("utf_8_compatibility", False, "output") Then _
-                        Me.args += " -Dfile.encoding=COMPAT "
+                        Me.args += " -Dfile.encoding=utf_8 "
 
                 Case McInteropType.vanilla
                     Me.switches = "nogui"
@@ -88,7 +88,7 @@ Namespace MCInterop
                     Me.switches = "-nojline"
                     Me.args += " -Duser.language=en "
                     If readAsBool("utf_8_compatibility", False, "output") Then _
-                        Me.args += " -Dfile.encoding=COMPAT "
+                        Me.args += " -Dfile.encoding=utf_8 "
 
 
             End Select
