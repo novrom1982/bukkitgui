@@ -80,7 +80,7 @@ Namespace MCInterop
                     Me.switches = "-nojline"
                     Me.args += " -Duser.language=en "
                     If readAsBool("utf_8_compatibility", False, "output") Then _
-                        Me.args += " -Dfile.encoding=utf_8 "
+                        Me.args += " -Dfile.encoding=utf-8 "
 
                 Case McInteropType.vanilla
                     Me.switches = "nogui"
@@ -88,7 +88,7 @@ Namespace MCInterop
                     Me.switches = "-nojline"
                     Me.args += " -Duser.language=en "
                     If readAsBool("utf_8_compatibility", False, "output") Then _
-                        Me.args += " -Dfile.encoding=utf_8 "
+                        Me.args += " -Dfile.encoding=utf-8 "
 
 
             End Select
